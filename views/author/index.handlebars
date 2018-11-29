@@ -1,0 +1,12 @@
+<h1>Authors</h1>
+{{#each authors}}
+    <div>
+        <p>Name: {{this.name}}</p>
+        <p>Gender: {{this.gender}}</p>
+        <div>
+            <a href="/authors/{{ this._id }}">show</a>
+            <a href="/authors/{{ this._id }}/edit">edit</a>
+            <a href="/authors/{{ this._id }}?_method=DELETE">delete</a>
+        </div>
+    </div>
+{{/each}}
