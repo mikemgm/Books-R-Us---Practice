@@ -6,6 +6,10 @@ const AuthorSchema = new Schema({
         type: String,
         required: true
     },
+    bio: {
+        type: String,
+        default: ""
+    },
     gender: {
         type: String,
         enum: ['male', 'female', 'non binary'],
